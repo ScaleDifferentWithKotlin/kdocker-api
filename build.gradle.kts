@@ -27,6 +27,12 @@ dependencies {
     implementation("org.apache.logging.log4j:log4j-core:2.13.0")
     implementation("org.apache.logging.log4j:log4j-api:2.13.0")
     implementation("org.apache.logging.log4j:log4j-slf4j-impl:2.13.0")
+
+    //Test
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.5.2")
+    testCompile("io.kotlintest:kotlintest-core")
+    testCompile("io.kotlintest:kotlintest-assertions")
+    testCompile("io.kotlintest:kotlintest-runner-junit5:3.4.2")
 }
 
 tasks {
@@ -36,4 +42,8 @@ tasks {
     compileTestKotlin {
         kotlinOptions.jvmTarget = "11"
     }
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
 }

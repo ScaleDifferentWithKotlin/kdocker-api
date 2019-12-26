@@ -6,6 +6,8 @@
 
 package com.scaledifferent.kdock.response.v124
 
+import org.junit.jupiter.api.Test
+
 class ContainerApiResponseDestructorTest {
 
     @Test
