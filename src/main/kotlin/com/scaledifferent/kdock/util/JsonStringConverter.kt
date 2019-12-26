@@ -4,7 +4,7 @@
  *
  */
 
-package com.scaledifferent.util
+package com.scaledifferent.kdock.util
 
 import com.google.gson.JsonElement
 import com.google.gson.JsonParser
@@ -13,7 +13,7 @@ import mu.KotlinLogging
 
 private val logger = KotlinLogging.logger{}
 
-class JsonFileLoader {
+class JsonStringConverter {
 
     companion object{
 

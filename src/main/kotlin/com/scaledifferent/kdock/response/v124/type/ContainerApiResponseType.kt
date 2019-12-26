@@ -1,0 +1,31 @@
+/*
+ *  Copyright (c) 2019 Scale different UG (Haftungsbeschränkt) and contributors. Use of this
+ *  source code is governed by the Apache 2.0 license.
+ *
+ */
+
+package com.scaledifferent.kdock.response.v124.type
+
+enum class ContainerApiResponseType: ApiType {
+
+    LIST_CONTAINERS,
+    CREATE_CONTAINER,
+    INSPECT_CONTAINER,
+    LIST_PROCESSES_IN_CONTAINER,
+    INSPECT_CHANGES_CONTAINER_FILE_SYSTEM,
+    GET_CONTAINER_STATS_RESOURCE_USAGE,
+    RESIZE_CONTAINER_TTY,
+    STOP_CONTAINER,
+    RESTART_CONTAINER,
+    UPDATE_CONTAINER,
+    RENAME_CONTAINER,
+    PAUSE_CONTAINER,
+    UNPAUSE_CONTAINER,
+    ATTACH_TO_CONTAINER,
+    ATTACH_TO_CONTAINER_OVER_WEBSOCKET,
+    WAIT_CONTAINER,
+    REMOVE_CONTAINER,
+    GET_INFO_FILES_FOLDERS_CONTAINER,
+    GET_ARCHIVE_RESOURCE,
+    EXTRACT_ARCHIVE_TO_CONTAINER
+}

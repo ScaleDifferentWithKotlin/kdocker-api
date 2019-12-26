@@ -6,7 +6,7 @@
 
 package com.scaledifferent.kdock.request.v124
 
-interface DockerMistApiRequest {
+interface DockerMiscApiRequest {
 
     fun checkAuthConfig()
     fun displaySysWideInfo()
