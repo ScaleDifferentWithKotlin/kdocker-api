@@ -8,9 +8,9 @@ package com.scaledifferent.kdock.response.v124
 
 import com.scaledifferent.kdock.response.v124.type.ApiType
 
-class ContainerApiResponseDestructor: ResponseDestructor {
+class ContainerApiResponseDestructor: ResponseDestructor<ContainerApiResponse> {
 
-    override fun destructJsonResponse(jsonString: String, apiType: ApiType) {
+    override fun destructJsonResponse(jsonString: String, apiType: ApiType): ContainerApiResponse {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 

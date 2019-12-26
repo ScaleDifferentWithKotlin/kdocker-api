@@ -6,9 +6,5 @@
 
 package com.scaledifferent.kdock.response.v124
 
-import com.scaledifferent.kdock.response.v124.type.ApiType
-
-interface ResponseDestructor<T: AbstractResponse> {
-
-    fun destructJsonResponse(jsonString: String, apiType: ApiType): T
+abstract class AbstractResponse {
 }
